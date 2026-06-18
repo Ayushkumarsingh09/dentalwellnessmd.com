@@ -1,36 +1,62 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Integrative Dental Wellness — Premium Redesign
 
-## Getting Started
+A luxury wellness-centered healthcare website for [Integrative Dental Wellness](https://dentalwellnessmd.com/) in Eldersburg, Maryland.
 
-First, run the development server:
+## Tech Stack
+
+- **Next.js 16** (App Router, static export)
+- **Tailwind CSS 4** with custom wellness design tokens
+- **TypeScript**
+- Real photography from the practice (no stock/AI imagery)
+
+## Design System
+
+| Token | Value | Usage |
+|-------|-------|-------|
+| Soft White | `#FAFAF8` | Backgrounds |
+| Sage Green | `#7D9B8A` | Primary brand |
+| Gold Champagne | `#C9A962` | Accents & CTAs |
+| Soft Beige | `#E8E0D5` | Supporting surfaces |
+
+Typography: **Cormorant Garamond** (display) + **DM Sans** (body)
+
+## Development
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Production Build
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+```
 
-## Learn More
+Static files are exported to the `out/` directory — deploy to any standard static host (Netlify, Vercel, cPanel, Cloudflare Pages, etc.).
 
-To learn more about Next.js, take a look at the following resources:
+## Homepage Sections
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Cinematic Wellness Hero
+2. Oral-Systemic Health Experience (interactive)
+3. Meet Dr. Kelly Betts
+4. Concierge Dental Experience
+5. Meet The Specialists
+6. Smile & Wellness Services
+7. Advanced Surgery & Implant Center
+8. Special Needs Excellence
+9. Patient Success Stories
+10. Wellness Membership
+11. Dental Anxiety Center
+12. Luxury Office Tour
+13. Flexible Payment Experience
+14. New Patient Journey
+15. Final Emotional CTA
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Deployment Notes
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Images load from `dentalwellnessmd.com/wp-content/uploads/` — for production independence, download assets locally to `public/images/`
+- Booking links point to FlexBook: `https://www.flexbook.me/intdentwel/`
+- Phone: (410) 552-3368
